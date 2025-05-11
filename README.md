@@ -1,2 +1,2 @@
-# hire-me
+# Hire-Me
 the perfect CV maker
