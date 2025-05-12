@@ -5,8 +5,9 @@ export type Theme = {
   fontFamily: string;
   fontSize: string;
   primaryColor: string;
-  secondaryColor: string;
-  backgroundColor: string;
+  pageMargin: string;
+  sectionSpacing: string;
+  lineSpacing: string;
   pattern: string;
 };
 

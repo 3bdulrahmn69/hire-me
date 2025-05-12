@@ -29,8 +29,9 @@ const initialCvData: CvData = {
     fontFamily: 'Arial',
     fontSize: '16px',
     primaryColor: '#000000',
-    secondaryColor: '#FFFFFF',
-    backgroundColor: '#F0F0F0',
+    pageMargin: '1in',
+    sectionSpacing: '1.5em',
+    lineSpacing: '1.5',
     pattern: 'none',
   },
   personalInfo: {
