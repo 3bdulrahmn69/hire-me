@@ -1,12 +1,12 @@
-import React from 'react';
+import { useState } from 'react';
 import Button from '../../ui/Button';
 import { useCvContext } from '../../../context/CvContext';
 
 const SharePanel = () => {
-  const [isCopied, setIsCopied] = React.useState(false);
-  const [isLoading, setIsLoading] = React.useState(false);
-  const [shareUrl, setShareUrl] = React.useState('');
-  const [hasCreatedLink, setHasCreatedLink] = React.useState(false);
+  const [isCopied, setIsCopied] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [shareUrl, setShareUrl] = useState('');
+  const [hasCreatedLink, setHasCreatedLink] = useState(false);
   const { cvData } = useCvContext();
 
   const handleCreateShareLink = async () => {
