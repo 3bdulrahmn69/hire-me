@@ -12,7 +12,7 @@ const SharePanel = () => {
   const handleCreateShareLink = async () => {
     setIsLoading(true);
     try {
-      setShareUrl(cvData.id);
+      setShareUrl(`http://localhost:5173/sahre/${cvData.id}`);
       setHasCreatedLink(true);
     } catch (error) {
       console.error('Error creating share link:', error);

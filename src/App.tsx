@@ -8,7 +8,7 @@ import Register from './pages/Register';
 import Login from './pages/Login';
 import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
-import TemplatePreview from './pages/templatePreview';
+import TemplatePreview from './pages/TemplatePreview';
 
 function App() {
   return (
