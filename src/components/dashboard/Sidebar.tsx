@@ -62,7 +62,7 @@ const Sidebar: React.FC<SidebarProps> = ({ currentPanel, setCurrentPanel }) => {
               {item.label}
             </button>
 
-            {(idx + 1) % 3 === 0 && idx !== menuItems.length - 1 && (
+            {(idx + 1) % 4 === 0 && idx !== menuItems.length - 1 && (
               <div className="border-t border-gray-200 my-3 mx-4" />
             )}
           </div>
