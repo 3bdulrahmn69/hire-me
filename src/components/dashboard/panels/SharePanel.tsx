@@ -33,16 +33,16 @@ const SharePanel = () => {
 
   return (
     <div className="w-full max-w-md p-4 space-y-4">
-      <h2 className="text-xl font-semibold">Partager le CV</h2>
+      <h2 className="text-xl font-semibold">Share your CV</h2>
       <p className="text-sm text-gray-600">
-        Partagez ce lien pour permettre aux autres de visualiser votre CV en
-        lecture seule.
+        Create a shareable link to your CV. You can send this link to anyone you
+        want to share your CV with.
       </p>
 
       {hasCreatedLink ? (
         <div className="space-y-3">
           <label htmlFor="share-url" className="text-sm font-medium block">
-            Lien de partage
+            Shareable link
           </label>
           <input
             id="share-url"
@@ -56,11 +56,9 @@ const SharePanel = () => {
             className="w-full bg-indigo-600 hover:bg-indigo-700 text-white"
             disabled={isCopied}
           >
-            {isCopied ? 'Copié !' : 'Copier le lien'}
+            {isCopied ? 'Copied !' : 'Copy link'}
           </Button>
-          <p className="text-xs text-gray-500">
-            Ce lien donne accès à une version en lecture seule de votre CV
-          </p>
+          <p className="text-xs text-gray-500"></p>
         </div>
       ) : (
         <Button
@@ -68,14 +66,11 @@ const SharePanel = () => {
           className="w-full bg-indigo-600 hover:bg-indigo-700 text-white"
           disabled={isLoading}
         >
-          {isLoading ? 'Création du lien...' : 'Créer un lien de partage'}
+          {isLoading ? 'Creating link...' : 'Create share link'}
         </Button>
       )}
 
-      <p className="text-xs text-gray-500 mt-2">
-        Les personnes avec ce lien pourront visualiser votre CV actuel. Mettez à
-        jour votre CV pour modifier la version partagée.
-      </p>
+      <p className="text-xs text-gray-500 mt-2"></p>
     </div>
   );
 };
