@@ -41,7 +41,7 @@ const initialCvData: CvData = {
     phone: '',
     address: '',
     website: '',
-    summary: '',
+    summary: 'asfa fasfasf afasf',
   },
   sections: [
     {
@@ -69,13 +69,33 @@ const initialCvData: CvData = {
       id: nanoid(),
       name: 'Education',
       type: 'list',
-      entries: [],
+      entries: [
+        {
+          institution: 'University A',
+          degree: 'Bachelor of Science in Computer Science',
+          startDate: '2015-01-01',
+          endDate: '2019-01-01',
+          description: 'Graduated with honors.',
+        },
+        {
+          institution: 'University B',
+          degree: 'Master of Science in Software Engineering',
+          startDate: '2021-01-01',
+          endDate: '2023-01-01',
+          description: 'Thesis on AI and Machine Learning.',
+        },
+      ],
     },
     {
       id: nanoid(),
       name: 'Skills',
       type: 'list',
-      entries: [],
+      entries: [
+        { skill: 'JavaScript', level: 'Advanced' },
+        { skill: 'React', level: 'Advanced' },
+        { skill: 'Node.js', level: 'Intermediate' },
+        { skill: 'CSS', level: 'Advanced' },
+      ],
     },
     {
       id: nanoid(),
