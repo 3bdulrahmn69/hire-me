@@ -4,7 +4,8 @@ export type Theme = {
   templateName: TemplateName;
   fontFamily: string;
   fontSize: string;
-  primaryColor: string;
+  bgColor: string;
+  textColor: string;
   pageMargin: string;
   sectionSpacing: string;
   lineSpacing: string;

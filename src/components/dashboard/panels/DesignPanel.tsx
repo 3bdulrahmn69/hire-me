@@ -9,8 +9,10 @@ const DesignPanel = () => {
 
   const changeFontSize = (fontSize: string) => setTheme({ ...theme, fontSize });
 
-  const changePrimaryColor = (primaryColor: string) =>
-    setTheme({ ...theme, primaryColor });
+  const changeBgColor = (bgColor: string) => setTheme({ ...theme, bgColor });
+
+  const changeTextColor = (textColor: string) =>
+    setTheme({ ...theme, textColor });
 
   const changePageMargin = (pageMargin: string) =>
     setTheme({ ...theme, pageMargin });
@@ -56,8 +58,18 @@ const DesignPanel = () => {
           Primary Color
           <input
             type="color"
-            value={theme.primaryColor}
-            onChange={(e) => changePrimaryColor(e.target.value)}
+            value={theme.bgColor}
+            onChange={(e) => changeBgColor(e.target.value)}
+            className="w-16 h-10 p-0 border rounded"
+          />
+        </label>
+
+        <label className="block">
+          Text Color
+          <input
+            type="color"
+            value={theme.textColor}
+            onChange={(e) => changeTextColor(e.target.value)}
             className="w-16 h-10 p-0 border rounded"
           />
         </label>
