@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Button from '../../ui/Button';
 import { useCvContext } from '../../../context/CvContext';
+import { omitKeys } from '../../../lib/utilities';
 
 type AIService = 'openai' | 'gemini' | 'claude';
 
@@ -10,14 +11,6 @@ interface AnalysisState {
   cvData: object;
 }
 
-function omitKeys<T extends object, K extends keyof T>(
-  obj: T,
-  keys: K[]
-): Omit<T, K> {
-  const newObj = { ...obj };
-  keys.forEach((key) => delete newObj[key]);
-  return newObj;
-}
 const AnalysisPanel = () => {
   const { cvData } = useCvContext();
   const topLevelClean = omitKeys(cvData, ['id', 'theme']);

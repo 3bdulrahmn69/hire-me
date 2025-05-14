@@ -32,7 +32,7 @@ const SharePanel = () => {
   };
 
   return (
-    <div className="w-full max-w-md p-4 space-y-4">
+    <div className="w-full h-full p-4 space-y-4">
       <h2 className="text-xl font-semibold">Share your CV</h2>
       <p className="text-sm text-gray-600">
         Create a shareable link to your CV. You can send this link to anyone you
